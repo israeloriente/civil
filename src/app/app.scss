@@ -1,0 +1,59 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+//Toda a parte do head do sidemenu (toobar) está aqui.
+.ionicon_toolbar{
+    width: 75%;
+    padding-left: 20%;
+    padding-bottom: 10%;
+    padding-top: 20%;
+    
+}
+.texto_toolbar{
+    font-size: 130%;
+    margin: 6% 0%;
+    text-align: center;
+    padding-right: 10%;
+    
+}
+.listaSidemenu{
+    height: 90%;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+}
+.botaoSidemenu{
+    width: 100%;
+    height: 9%;
+}//fim do head do sidemenu
+.footer{
+    height: 9%;
+}
+// Manipula os icones do sidemenu (home, chamados, problemas...)
+.ion-icon-menuside{
+    color: #757575;
+    width: 17%;
+    font-size: 1.5em;
+}
+.toolbar-background{
+background-color: #343a40;
+}
+.toolbar-title{
+    color: #ffffff;
+}
+.texto_toolbar{
+    color: #ffffff;
+}

@@ -1,0 +1,33 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+        <ion-grid no-padding>
+            <ion-row no-padding>
+              <ion-col col-3>
+                <img class="ionicon_toolbar" src="../../assets/imgs/iconpinvert.png"/>
+              </ion-col> 
+              <ion-col col-9>
+                <p  class="texto_toolbar"> Gerenciamento de Ocorrencias </p>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-card class="listaSidemenu">
+      <ion-list no-lines>    
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          <ion-icon class="ion-icon-menuside" name="{{p.icon}}"> </ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
+
+  </ion-card>
+  <button ion-button color="danger" class="botaoSidemenu" (click)="logoff()"> Logoff </button>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

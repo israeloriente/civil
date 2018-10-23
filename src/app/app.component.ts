@@ -10,6 +10,8 @@ import { ProblemasPage } from '../pages/problemas/problemas';
 import { PronovaPage } from '../pages/pronova/pronova';
 import { ProgerenciarsubPage } from '../pages/progerenciarsub/progerenciarsub';
 import { ProgerenciarproPage } from '../pages/progerenciarpro/progerenciarpro';
+import { GerenciarblocosPage } from '../pages/gerenciarblocos/gerenciarblocos';
+import { GerenciarapartamentosPage } from '../pages/gerenciarapartamentos/gerenciarapartamentos';
 
 
 @Component({
@@ -18,7 +20,7 @@ import { ProgerenciarproPage } from '../pages/progerenciarpro/progerenciarpro';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = ChamadosPage;
+  rootPage: any = EmpreendimentosPage;
 
   pages: Array<{
     title: string,
@@ -38,6 +40,9 @@ export class MyApp {
       { title: 'Gerenciar problemas', component: ProgerenciarproPage, icon: 'return-right'},
       { title: 'Chamados', component: ChamadosPage, icon: 'chatboxes'},
       { title: 'Empreendimentos', component: EmpreendimentosPage, icon: 'home'},
+      { title: 'Gerenciar Blocos', component: GerenciarblocosPage, icon: 'return-right'},
+      { title: 'Gerenciar Apartamentos', component: GerenciarapartamentosPage, icon: 'return-right'},
+
     ];
     
   }

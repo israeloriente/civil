@@ -14,6 +14,8 @@ import { ProblemasPage } from '../pages/problemas/problemas';
 import { PronovaPage } from '../pages/pronova/pronova';
 import { ProgerenciarsubPage } from '../pages/progerenciarsub/progerenciarsub';
 import { ProgerenciarproPage } from '../pages/progerenciarpro/progerenciarpro';
+import { GerenciarblocosPage } from '../pages/gerenciarblocos/gerenciarblocos';
+import { GerenciarapartamentosPage } from '../pages/gerenciarapartamentos/gerenciarapartamentos';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ProgerenciarproPage } from '../pages/progerenciarpro/progerenciarpro';
     ProblemasPage,
     PronovaPage,
     ProgerenciarsubPage,
-    ProgerenciarproPage
+    ProgerenciarproPage,
+    GerenciarblocosPage,
+    GerenciarapartamentosPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,9 @@ import { ProgerenciarproPage } from '../pages/progerenciarpro/progerenciarpro';
     ProblemasPage,
     PronovaPage,
     ProgerenciarsubPage,
-    ProgerenciarproPage    
+    ProgerenciarproPage,
+    GerenciarblocosPage,
+    GerenciarapartamentosPage 
   ],
   providers: [
     StatusBar,

@@ -1,44 +1,344 @@
-<!--
-  Generated template for the ChamadosPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar class="navbarChamados">
       <!-- Botão do sidemenu-->
       <button ion-button menuToggle color="light">
           <ion-icon name="menu"></ion-icon>
       </button>
+      <!-- Titulo navbar-->
     <ion-title>chamados</ion-title>
   </ion-navbar>
-
 </ion-header>
-
-
-<ion-content no-margin>
-
-    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-<ion-list>
-  <ion-item *ngFor="let item of items">
-    {{ item }}
-  </ion-item>
-</ion-list>
-
-<ion-card>
-  <img id="imgCard" src="../../assets/imgs/imgAlamoana.jpg"/>
-  <ion-grid>
-    <ion-row>
-      <ion-col col-6>  </ion-col>
-    </ion-row>
-  </ion-grid>
+<!-- Inicio do corpo-->
+<ion-content class="chamadosContent">
+<!-- Barra de pesquisa -->
+<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<!-- Inicio do primeiro card -->    
+<ion-card class="cardsChamados">
+    <!-- Criando uma grid -->
+    <ion-grid class="gridCardsChamados">
+      <!-- Criou uma linha -->
+      <ion-row>
+        <!-- Criou coluna 1 -->
+        <ion-col class="colCardsChamados" col-4>
+          <img class="imagensCardsChamados" src="../../assets/imgs/imgAlamoana.jpg">
+        </ion-col>
+        <!-- Criou coluna 2 -->
+        <ion-col col-5>
+            <p id="textoCardPrincipal">
+               <ion-icon class="ion-icon-chamados" ios="ios-home" md="md-home">
+               </ion-icon> Alamoana</p>
+            <p id="textoNome">
+               <ion-icon class="ion-icon-chamados" ios="ios-person" md="md-person">
+               </ion-icon> Vitor Fernandes</p>
+            <p class="estadoChamada" id="aberto">
+              <ion-icon class="ion-icon-chamados" ios="ios-stats" md="md-stats">
+              </ion-icon> Aberto</p>
+            <p id="textoNome"> <ion-icon class="ion-icon-chamados" ios="ios-archive" md="md-archive">
+            </ion-icon> 270820182052461723</p>
+        </ion-col>
+        <!-- Criou coluna 3 -->
+        <ion-col col-3>
+          <p id="textoData">
+            <ion-icon class="ion-icon-chamados" ios="ios-calendar" md="md-calendar">
+            </ion-icon> 10/10/2019</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 </ion-card>
 
 
-    <ion-footer class="footer">
-      <ion-toolbar>
-      
-      </ion-toolbar>
-    </ion-footer>
+<!-- Inicio do card -->    
+<ion-card class="cardsChamados">
+    <!-- Criando uma grid -->
+    <ion-grid class="gridCardsChamados">
+      <!-- Criou uma linha -->
+      <ion-row>
+        <!-- Criou coluna 1 -->
+        <ion-col class="colCardsChamados" col-4>
+          <img class="imagensCardsChamados" src="../../assets/imgs/imgAliance.png">
+        </ion-col>
+        <!-- Criou coluna 2 -->
+        <ion-col col-5>
+            <p id="textoCardPrincipal">
+               <ion-icon class="ion-icon-chamados" ios="ios-home" md="md-home">
+               </ion-icon> Alliance</p>
+            <p id="textoNome">
+               <ion-icon class="ion-icon-chamados" ios="ios-person" md="md-person">
+               </ion-icon> Lúcio Alves de Carvalho</p>
+            <p class="estadoChamada" id="aberto">
+              <ion-icon class="ion-icon-chamados" ios="ios-stats" md="md-stats">
+              </ion-icon> Aberto</p>
+            <p id="textoNome"> <ion-icon class="ion-icon-chamados" ios="ios-archive" md="md-archive">
+            </ion-icon> 4329708543908527985</p>
+        </ion-col>
+        <!-- Criou coluna 3 -->
+        <ion-col col-3>
+          <p id="textoData">
+            <ion-icon class="ion-icon-chamados" ios="ios-calendar" md="md-calendar">
+            </ion-icon> 01/10/2018</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-card>
+
+
+<!-- Inicio do card -->    
+<ion-card class="cardsChamados">
+    <!-- Criando uma grid -->
+    <ion-grid class="gridCardsChamados">
+      <!-- Criou uma linha -->
+      <ion-row>
+        <!-- Criou coluna 1 -->
+        <ion-col class="colCardsChamados" col-4>
+          <img class="imagensCardsChamados" src="../../assets/imgs/imgAliance2.png">
+        </ion-col>
+        <!-- Criou coluna 2 -->
+        <ion-col col-5>
+            <p id="textoCardPrincipal">
+               <ion-icon class="ion-icon-chamados" ios="ios-home" md="md-home">
+               </ion-icon> Alliance</p>
+            <p id="textoNome">
+               <ion-icon class="ion-icon-chamados" ios="ios-person" md="md-person">
+               </ion-icon> Marcelo Carvalho</p>
+            <p class="estadoChamada" id="aberto">
+              <ion-icon class="ion-icon-chamados" ios="ios-stats" md="md-stats">
+              </ion-icon> Aberto</p>
+            <p id="textoNome"> <ion-icon class="ion-icon-chamados" ios="ios-archive" md="md-archive">
+            </ion-icon> 8875486543728642837</p>
+        </ion-col>
+        <!-- Criou coluna 3 -->
+        <ion-col col-3>
+          <p id="textoData">
+            <ion-icon class="ion-icon-chamados" ios="ios-calendar" md="md-calendar">
+            </ion-icon> 05/08/2018</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-card>
+
+
+
+<!-- Inicio do card -->    
+<ion-card class="cardsChamados">
+    <!-- Criando uma grid -->
+    <ion-grid class="gridCardsChamados">
+      <!-- Criou uma linha -->
+      <ion-row>
+        <!-- Criou coluna 1 -->
+        <ion-col class="colCardsChamados" col-4>
+          <img class="imagensCardsChamados" src="../../assets/imgs/imgFibra.png">
+        </ion-col>
+        <!-- Criou coluna 2 -->
+        <ion-col col-5>
+            <p id="textoCardPrincipal">
+               <ion-icon class="ion-icon-chamados" ios="ios-home" md="md-home">
+               </ion-icon> Fibra Construtora</p>
+            <p id="textoNome">
+               <ion-icon class="ion-icon-chamados" ios="ios-person" md="md-person">
+               </ion-icon> Diogo Mendes</p>
+            <p class="estadoChamada" id="atendimento">
+              <ion-icon class="ion-icon-chamados" ios="ios-stats" md="md-stats">
+              </ion-icon> Atendimento</p>
+            <p id="textoNome"> <ion-icon class="ion-icon-chamados" ios="ios-archive" md="md-archive">
+            </ion-icon> 12345436547547475</p>
+        </ion-col>
+        <!-- Criou coluna 3 -->
+        <ion-col col-3>
+          <p id="textoData">
+            <ion-icon class="ion-icon-chamados" ios="ios-calendar" md="md-calendar">
+            </ion-icon> 05/03/2018</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-card>
+
+
+
+<!-- Inicio do card -->    
+<ion-card class="cardsChamados">
+    <!-- Criando uma grid -->
+    <ion-grid class="gridCardsChamados">
+      <!-- Criou uma linha -->
+      <ion-row>
+        <!-- Criou coluna 1 -->
+        <ion-col class="colCardsChamados" col-4>
+          <img class="imagensCardsChamados" src="../../assets/imgs/imgJw.png">
+        </ion-col>
+        <!-- Criou coluna 2 -->
+        <ion-col col-5>
+            <p id="textoCardPrincipal">
+               <ion-icon class="ion-icon-chamados" ios="ios-home" md="md-home">
+               </ion-icon> JW Construtora</p>
+            <p id="textoNome">
+               <ion-icon class="ion-icon-chamados" ios="ios-person" md="md-person">
+               </ion-icon> Marina do Rosário</p>
+            <p class="estadoChamada" id="atendimento">
+              <ion-icon class="ion-icon-chamados" ios="ios-stats" md="md-stats">
+              </ion-icon> Atendimento</p>
+            <p id="textoNome"> <ion-icon class="ion-icon-chamados" ios="ios-archive" md="md-archive">
+            </ion-icon> 433268587258943634</p>
+        </ion-col>
+        <!-- Criou coluna 3 -->
+        <ion-col col-3>
+          <p id="textoData">
+            <ion-icon class="ion-icon-chamados" ios="ios-calendar" md="md-calendar">
+            </ion-icon> 01/03/2018</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-card>
+
+
+
+<!-- Inicio do card -->    
+<ion-card class="cardsChamados">
+    <!-- Criando uma grid -->
+    <ion-grid class="gridCardsChamados">
+      <!-- Criou uma linha -->
+      <ion-row>
+        <!-- Criou coluna 1 -->
+        <ion-col class="colCardsChamados" col-4>
+          <img class="imagensCardsChamados" src="../../assets/imgs/imgLive.png">
+        </ion-col>
+        <!-- Criou coluna 2 -->
+        <ion-col col-5>
+            <p id="textoCardPrincipal">
+               <ion-icon class="ion-icon-chamados" ios="ios-home" md="md-home">
+               </ion-icon> Live </p>
+            <p id="textoNome">
+               <ion-icon class="ion-icon-chamados" ios="ios-person" md="md-person">
+               </ion-icon> Kleber Falcão</p>
+            <p class="estadoChamada" id="encerrado">
+              <ion-icon class="ion-icon-chamados" ios="ios-stats" md="md-stats">
+              </ion-icon> encerrado</p>
+            <p id="textoNome"> <ion-icon class="ion-icon-chamados" ios="ios-archive" md="md-archive">
+            </ion-icon> 748753285387678</p>
+        </ion-col>
+        <!-- Criou coluna 3 -->
+        <ion-col col-3>
+          <p id="textoData">
+            <ion-icon class="ion-icon-chamados" ios="ios-calendar" md="md-calendar">
+            </ion-icon> 08/03/2018</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-card>
+
+
+
+<!-- Inicio do card -->    
+<ion-card class="cardsChamados">
+    <!-- Criando uma grid -->
+    <ion-grid class="gridCardsChamados">
+      <!-- Criou uma linha -->
+      <ion-row>
+        <!-- Criou coluna 1 -->
+        <ion-col class="colCardsChamados" col-4>
+          <img class="imagensCardsChamados" src="../../assets/imgs/imgAliance2.png">
+        </ion-col>
+        <!-- Criou coluna 2 -->
+        <ion-col col-5>
+            <p id="textoCardPrincipal">
+               <ion-icon class="ion-icon-chamados" ios="ios-home" md="md-home">
+               </ion-icon> Alliance </p>
+            <p id="textoNome">
+               <ion-icon class="ion-icon-chamados" ios="ios-person" md="md-person">
+               </ion-icon> Lucas Velloso Falcão</p>
+            <p class="estadoChamada" id="encerrado">
+              <ion-icon class="ion-icon-chamados" ios="ios-stats" md="md-stats">
+              </ion-icon> encerrado</p>
+            <p id="textoNome"> <ion-icon class="ion-icon-chamados" ios="ios-archive" md="md-archive">
+            </ion-icon> 5478935886435111</p>
+        </ion-col>
+        <!-- Criou coluna 3 -->
+        <ion-col col-3>
+          <p id="textoData">
+            <ion-icon class="ion-icon-chamados" ios="ios-calendar" md="md-calendar">
+            </ion-icon> 08/05/2018</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-card>
+
+
+
+<!-- Inicio do card -->    
+<ion-card class="cardsChamados">
+    <!-- Criando uma grid -->
+    <ion-grid class="gridCardsChamados">
+      <!-- Criou uma linha -->
+      <ion-row>
+        <!-- Criou coluna 1 -->
+        <ion-col class="colCardsChamados" col-4>
+          <img class="imagensCardsChamados" src="../../assets/imgs/imgAliance.png">
+        </ion-col>
+        <!-- Criou coluna 2 -->
+        <ion-col col-5>
+            <p id="textoCardPrincipal">
+               <ion-icon class="ion-icon-chamados" ios="ios-home" md="md-home">
+               </ion-icon> Alliance </p>
+            <p id="textoNome">
+               <ion-icon class="ion-icon-chamados" ios="ios-person" md="md-person">
+               </ion-icon> Renato Mendes</p>
+            <p class="estadoChamada" id="encerrado">
+              <ion-icon class="ion-icon-chamados" ios="ios-stats" md="md-stats">
+              </ion-icon> encerrado</p>
+            <p id="textoNome"> <ion-icon class="ion-icon-chamados" ios="ios-archive" md="md-archive">
+            </ion-icon> 1409134928864876567</p>
+        </ion-col>
+        <!-- Criou coluna 3 -->
+        <ion-col col-3>
+          <p id="textoData">
+            <ion-icon class="ion-icon-chamados" ios="ios-calendar" md="md-calendar">
+            </ion-icon> 09/05/2018</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-card>
+
+
+
+<!-- Inicio do card -->    
+<ion-card class="cardsChamados">
+    <!-- Criando uma grid -->
+    <ion-grid class="gridCardsChamados">
+      <!-- Criou uma linha -->
+      <ion-row>
+        <!-- Criou coluna 1 -->
+        <ion-col class="colCardsChamados" col-4>
+          <img class="imagensCardsChamados" src="../../assets/imgs/imgAliance2.png">
+        </ion-col>
+        <!-- Criou coluna 2 -->
+        <ion-col col-5>
+            <p id="textoCardPrincipal">
+               <ion-icon class="ion-icon-chamados" ios="ios-home" md="md-home">
+               </ion-icon> Alliance </p>
+            <p id="textoNome">
+               <ion-icon class="ion-icon-chamados" ios="ios-person" md="md-person">
+               </ion-icon> Amanda Campos</p>
+            <p class="estadoChamada" id="encerrado">
+              <ion-icon class="ion-icon-chamados" ios="ios-stats" md="md-stats">
+              </ion-icon> encerrado</p>
+            <p id="textoNome"> <ion-icon class="ion-icon-chamados" ios="ios-archive" md="md-archive">
+            </ion-icon> 492334918374987393</p>
+        </ion-col>
+        <!-- Criou coluna 3 -->
+        <ion-col col-3>
+          <p id="textoData">
+            <ion-icon class="ion-icon-chamados" ios="ios-calendar" md="md-calendar">
+            </ion-icon> 10/05/2018</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-card>
+
+
+
+<!-- Botão de adicionar um novo chamado -->
+<ion-fab  right bottom>
+    <button ion-fab><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+
+<!-- Fim do corpo -->
 </ion-content>

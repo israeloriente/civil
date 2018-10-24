@@ -55,7 +55,7 @@
           <ion-item>
               <ion-label>Empreendimento</ion-label>
               <ion-select [(ngModel)]="notifications" interface="action-sheet">
-                <ion-option value="">Alliance</ion-option>
+                <ion-option value="Alliance">Alliance</ion-option>
                 <ion-option value="">Alamoana</ion-option>
                 <ion-option value="">Fibra</ion-option>
                 <ion-option value="">Live</ion-option>
@@ -92,13 +92,25 @@
                 <ion-option value="">Infiltração</ion-option>
             </ion-select>
            </ion-item>
+            <br>
+           <ion-grid>
+             <ion-row>
+               <ion-col col-4>
+                  <input type="file" id="upload_file" name="upload_file" />
+                  <label id="upload_btn" for="upload_file"><img src="../../assets/imgs/upload.png"/></label>
+               </ion-col>
 
+               <ion-col col-4>
+                  <input type="file" id="upload_file" name="upload_file" />
+                  <label id="upload_btn" for="upload_file"><img src="../../assets/imgs/upload.png"/></label>
+               </ion-col>
 
-
-
-
-           
-           <br>
+               <ion-col col-4>
+                  <input type="file" id="upload_file" name="upload_file" />
+                  <label id="upload_btn" for="upload_file"><img src="../../assets/imgs/upload.png"/></label>
+               </ion-col>
+             </ion-row>
+            </ion-grid>
            <ion-label>Descreva o problema</ion-label>
            <ion-item class="">
              <ion-input maxlength="500" type="text"></ion-input>

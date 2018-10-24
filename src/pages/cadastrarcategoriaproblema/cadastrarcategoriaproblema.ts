@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ProblemasPage } from '../problemas/problemas';
 
 /**
  * Generated class for the CadastrarcategoriaproblemaPage page.
@@ -18,8 +19,8 @@ export class CadastrarcategoriaproblemaPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CadastrarcategoriaproblemaPage');
+  voltarproblemas(){
+    this.navCtrl.setRoot(ProblemasPage);
   }
 
 }

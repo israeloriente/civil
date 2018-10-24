@@ -1,6 +1,13 @@
 page-cadastrarchamado {
 
 }
-.problemaChamado{
-    
+
+// Junta os bot~es de upload com as imagens de upload.
+#upload_file{
+    width:0.1px;
+    height:0.1px;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    z-index:-1;
 }

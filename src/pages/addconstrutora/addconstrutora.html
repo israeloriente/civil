@@ -7,9 +7,6 @@
 <ion-header>
 
   <ion-navbar>
-    <button ion-button menuToggle id="menuToggle">
-        <ion-icon name="menu"></ion-icon>
-    </button>
     <ion-title> Novo Empreendimento</ion-title>
   </ion-navbar>
 
@@ -22,7 +19,8 @@
       <ion-row>
         <ion-col col-5>
           <ion-card>
-            <img src="../../assets/imgs/addicon.png">
+            <input type="file" id="upload_file" name="upload_file" />
+<label id="upload_btn" for="upload_file"><img src="../../assets/imgs/addicon.png"/></label>
           </ion-card>
         </ion-col>
         <ion-col col-7>
@@ -35,6 +33,7 @@
     </ion-grid>
     </ion-list>
   </ion-card>
+
 
   <!-- Botão de adicionar um novo chamado -->
 <ion-fab  right bottom>

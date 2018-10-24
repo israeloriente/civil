@@ -9,6 +9,7 @@ import { ChamadosPage } from '../chamados/chamados';
 })
 export class CadastrarchamadoPage {
 
+  // Corrigir erros aqui
   status: string = "aberto";
   Empreendimento: string = "";
 

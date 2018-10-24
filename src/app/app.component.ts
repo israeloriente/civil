@@ -22,7 +22,7 @@ import { AddconstrutoraPage } from '../pages/addconstrutora/addconstrutora';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = AddconstrutoraPage;
+  rootPage: any = ProblemasPage;
 
   pages: Array <{
     title: string,

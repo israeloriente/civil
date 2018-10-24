@@ -11,13 +11,95 @@
 </ion-header>
 
 <ion-content no-padding>
-
+    <!-- Barra de pesquisa -->
     <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
 <ion-list>
   <ion-item *ngFor="let item of items">
     {{ item }}
   </ion-item>
 </ion-list>
+
+<!-- Lista Limpeza -->
+<ion-list class="lista" padding>  
+    <ion-item-sliding class="listaCategorias">
+      <ion-item>
+        <ion-avatar item-start>
+            <img src="../../assets/imgs/alerta.png">
+        </ion-avatar>
+        <div class="tituloCategoria"> Limpeza </div>
+        <div class="vamostentar"> 24/10/2018 - 15:46 </div>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+          <ion-icon name="trash"></ion-icon>
+          Apagar
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>  
+  </ion-list>
+
+
+  <!-- Lista Estrutural -->
+<ion-list class="lista" padding>
+    <ion-item-sliding class="listaCategorias">
+      <ion-item>
+        <ion-avatar item-start>
+            <img src="../../assets/imgs/alerta.png">
+        </ion-avatar>
+        <div class="tituloCategoria"> Estrutural </div>
+        <div class="vamostentar"> 25/10/2018 - 15:11 </div>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+          <ion-icon name="trash"></ion-icon>
+          Apagar
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+
+  <!-- Lista Eletrico -->
+<ion-list class="lista" padding>
+    <ion-item-sliding class="listaCategorias">
+      <ion-item>
+        <ion-avatar item-start>
+            <img src="../../assets/imgs/alerta.png">
+        </ion-avatar>
+        <div class="tituloCategoria"> Elétrico </div>
+        <div class="vamostentar"> 30/10/2018 - 10:46 </div>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+          <ion-icon name="trash"></ion-icon>
+          Apagar
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+
+  <!-- Lista Hidráulico -->
+<ion-list class="lista" padding>
+    <ion-item-sliding class="listaCategorias">
+      <ion-item>
+        <ion-avatar item-start>
+            <img src="../../assets/imgs/alerta.png">
+        </ion-avatar>
+        <div class="tituloCategoria"> Hidráulico </div>
+        <div class="vamostentar"> 02/11/2018 - 15:50 </div>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+          <ion-icon name="trash"></ion-icon>
+          Apagar
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+
+
 
 
 <!-- Botão de adicionar um novo chamado -->

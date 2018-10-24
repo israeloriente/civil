@@ -2,3 +2,29 @@ page-problemas {
 
    
 }
+// Deixa todos os items arredondados
+.listaCategorias{
+    border-radius: 10px;
+}
+.titleDeixarPreto{
+    color: aqua !important;
+}
+
+element.style {
+    margin-bottom: 3px;
+    margin-right: 0px;
+    margin-top: 3px;
+}
+.vamostentar{
+    font-size: 10px;
+}
+.tituloCategoria{
+    font-weight: bold;
+}
+// Ajusta o espaçamento entre as listas
+.lista{
+    padding-bottom: 0%;
+    padding-top: 0%;
+    margin-top: -5%;
+    margin-bottom: 0%;
+}

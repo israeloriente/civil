@@ -13,6 +13,7 @@ import { GerenciarapartamentosPage } from '../pages/gerenciarapartamentos/gerenc
 import { CadastrarchamadoPage } from '../pages/cadastrarchamado/cadastrarchamado';
 import { UploadPage } from '../pages/upload/upload';
 import { AddconstrutoraPage } from '../pages/addconstrutora/addconstrutora';
+import { CadastrarcategoriaproblemaPage } from '../pages/cadastrarcategoriaproblema/cadastrarcategoriaproblema';
 
 
 

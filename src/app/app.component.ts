@@ -3,15 +3,17 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
 import { ChamadosPage } from '../pages/chamados/chamados';
 import { EmpreendimentosPage } from '../pages/empreendimentos/empreendimentos';
 import { ProblemasPage } from '../pages/problemas/problemas';
-import { PronovaPage } from '../pages/pronova/pronova';
 import { ProgerenciarsubPage } from '../pages/progerenciarsub/progerenciarsub';
 import { ProgerenciarproPage } from '../pages/progerenciarpro/progerenciarpro';
 import { GerenciarblocosPage } from '../pages/gerenciarblocos/gerenciarblocos';
 import { GerenciarapartamentosPage } from '../pages/gerenciarapartamentos/gerenciarapartamentos';
+import { CadastrarchamadoPage } from '../pages/cadastrarchamado/cadastrarchamado';
+import { UploadPage } from '../pages/upload/upload';
+import { AddconstrutoraPage } from '../pages/addconstrutora/addconstrutora';
+
 
 
 @Component({
@@ -20,12 +22,13 @@ import { GerenciarapartamentosPage } from '../pages/gerenciarapartamentos/gerenc
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = EmpreendimentosPage;
+  rootPage: any = AddconstrutoraPage;
 
-  pages: Array<{
+  pages: Array <{
     title: string,
     component: any,
-    icon: string}>;
+    icon: string
+  }>;
 
   constructor(public platform: Platform,
               public statusBar: StatusBar,
@@ -35,7 +38,6 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Problemas', component: ProblemasPage, icon: 'alert'},
-      { title: 'Cadastrar nova categoria', component: PronovaPage, icon: 'return-right'},
       { title: 'Gerenciar subcategorias', component: ProgerenciarsubPage, icon: 'return-right'},
       { title: 'Gerenciar problemas', component: ProgerenciarproPage, icon: 'return-right'},
       { title: 'Chamados', component: ChamadosPage, icon: 'chatboxes'},

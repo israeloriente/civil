@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the PronovaPage page.
+ * Generated class for the CadastrarcategoriaproblemaPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-pronova',
-  templateUrl: 'pronova.html',
+  selector: 'page-cadastrarcategoriaproblema',
+  templateUrl: 'cadastrarcategoriaproblema.html',
 })
-export class PronovaPage {
+export class CadastrarcategoriaproblemaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PronovaPage');
+    console.log('ionViewDidLoad CadastrarcategoriaproblemaPage');
   }
 
 }

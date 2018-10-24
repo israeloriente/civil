@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { PronovaPage } from './pronova';
+import { UploadPage } from './upload';
 
 @NgModule({
   declarations: [
-    PronovaPage,
+    UploadPage,
   ],
   imports: [
-    IonicPageModule.forChild(PronovaPage),
+    IonicPageModule.forChild(UploadPage),
   ],
 })
-export class PronovaPageModule {}
+export class UploadPageModule {}

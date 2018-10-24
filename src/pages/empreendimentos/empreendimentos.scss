@@ -12,11 +12,39 @@ page-empreendimentos {
     padding-bottom: 0px;
     -webkit-box-shadow: 0 3px 5px #ffffff;
 	-moz-box-shadow: 0 3px 5px #ffffff;
-	box-shadow: 0 3px 5px #ffffff;
+    box-shadow: 0 3px 5px #ffffff;
 }
 .gridEmpreendimentos{
     padding-right: 15px;
     padding-top: 5px;
     padding-left: 15px;
     padding-bottom: 5px;
+}
+// Esta ajustando o primeiro parágrafo.
+.pCard1{
+    padding-top: 8%;
+    font-size: 12px;
+    max-width: 12ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+// Manipula todos os icones dos cards de Empreendimentos.
+.pCard2{
+    color: #757575;
+    font-size: 1.5em;
+}
+// Cores privadas dependendo do Status
+#atendimento{
+    color: #dfd002;
+}
+#aberto{
+    color: #e20d18;
+}
+#encerrado{
+    color: #08c208;
+}
+// Controla apenas a parte da imagem do card.
+.imgCard{
+    border-radius: 7px;
 }

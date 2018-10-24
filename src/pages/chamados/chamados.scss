@@ -1,11 +1,6 @@
 page-chamados {
     
 }
-
-// Corpo de chamados
-.chamadosContent{
-    background-color: rgb(241, 241, 241);
-}
 // Adicionando uma pequena sombra embaixo do tollbar.
 .navbarChamados{
     -webkit-box-shadow: 0px 1px 5px #969696;
@@ -48,7 +43,7 @@ page-chamados {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-// Cor privada dependendo do Status
+// Cores privadas dependendo do Status
 #atendimento{
     color: #dfd002;
 }

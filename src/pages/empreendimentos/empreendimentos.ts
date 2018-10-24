@@ -1,25 +1,24 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import { AddconstrutoraPage } from '../addconstrutora/addconstrutora';
+import { ChamadosPage } from '../chamados/chamados';
+import { UploadPage } from '../upload/upload';
 
-/**
- * Generated class for the EmpreendimentosPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
-@IonicPage()
 @Component({
-  selector: 'page-empreendimentos',
   templateUrl: 'empreendimentos.html',
 })
 export class EmpreendimentosPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navCtrl: NavController, 
+  public navParams: NavParams) {
+}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EmpreendimentosPage');
-  }
+navCriarEmpreendimento(){
+  this.navCtrl.push(AddconstrutoraPage);
+}
+irChamados(){
+  this.navCtrl.setRoot(ChamadosPage);
+}
 
 }

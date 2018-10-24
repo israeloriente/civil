@@ -10,7 +10,7 @@
   </ion-navbar>
 </ion-header>
 <!-- Inicio do corpo-->
-<ion-content class="chamadosContent">
+<ion-content class="content">
 <!-- Barra de pesquisa -->
 <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
 <!-- Inicio do primeiro card -->    
@@ -337,7 +337,7 @@
 
 <!-- Botão de adicionar um novo chamado -->
 <ion-fab  right bottom>
-    <button ion-fab><ion-icon name="add"></ion-icon></button>
+    <button (click)="cadastrarchamado()" ion-fab><ion-icon name="add"></ion-icon></button>
   </ion-fab>
 
 <!-- Fim do corpo -->

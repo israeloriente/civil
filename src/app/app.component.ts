@@ -11,9 +11,10 @@ import { ProgerenciarproPage } from '../pages/progerenciarpro/progerenciarpro';
 import { GerenciarblocosPage } from '../pages/gerenciarblocos/gerenciarblocos';
 import { GerenciarapartamentosPage } from '../pages/gerenciarapartamentos/gerenciarapartamentos';
 import { CadastrarchamadoPage } from '../pages/cadastrarchamado/cadastrarchamado';
-import { UploadPage } from '../pages/upload/upload';
+import { HomePage } from '../pages/home/home';
 import { AddconstrutoraPage } from '../pages/addconstrutora/addconstrutora';
 import { CadastrarcategoriaproblemaPage } from '../pages/cadastrarcategoriaproblema/cadastrarcategoriaproblema';
+import { TestePage } from '../pages/teste/teste';
 
 
 
@@ -23,7 +24,7 @@ import { CadastrarcategoriaproblemaPage } from '../pages/cadastrarcategoriaprobl
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = ProblemasPage;
+  rootPage: any = TestePage;
 
   pages: Array <{
     title: string,

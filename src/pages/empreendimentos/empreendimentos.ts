@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { AddconstrutoraPage } from '../addconstrutora/addconstrutora';
 import { ChamadosPage } from '../chamados/chamados';
-import { UploadPage } from '../upload/upload';
 
 
 @Component({

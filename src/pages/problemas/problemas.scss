@@ -1,30 +1,33 @@
 page-problemas {
 
-   
-}
-// Deixa todos os items arredondados
-.listaCategorias{
-    border-radius: 10px;
-}
-.titleDeixarPreto{
-    color: aqua !important;
-}
+    // Deixa todos os items arredondados
+    .listaCategorias{
+        border-radius: 12px;
+        -webkit-box-shadow: 1px 1px 5px #b6b6b6;
+        margin-bottom: 8px;
+    }
+    .titleDeixarPreto{
+        color: aqua !important;
+    }
 
-element.style {
-    margin-bottom: 3px;
-    margin-right: 0px;
-    margin-top: 3px;
-}
-.vamostentar{
-    font-size: 10px;
-}
-.tituloCategoria{
-    font-weight: bold;
-}
-// Ajusta o espaçamento entre as listas
-.lista{
-    padding-bottom: 0%;
-    padding-top: 0%;
-    margin-top: -5%;
-    margin-bottom: 0%;
+    element.style {
+        margin-bottom: 3px;
+        margin-right: 0px;
+        margin-top: 3px;
+    }
+    .vamostentar{
+        font-size: 10px;
+    }
+    .tituloCategoria{
+        font-weight: bold;
+    }
+    // Ajusta o espaçamento entre as listas
+    .lista{
+        padding-bottom: 0%;
+        padding-top: 0%;
+        margin-top: -5%;
+        margin-bottom: 0%;
+    }
+
+   
 }

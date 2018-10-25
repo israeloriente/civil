@@ -1,0 +1,87 @@
+page-teste {
+    // É a sombra branca em baixo dos nomes das categorias
+    .SwipedTabs-indicatorSegment{
+     -webkit-transition: 0.3s all;
+    -moz-transition:  0.3s all;
+    -o-transition:  0.3s all;
+    transition:  0.3s all;
+    transform-origin: top 0 left 0;
+    height: 3px;
+	position: relative;
+	background-color: white !important;
+    } 
+    // Responsavel pelas categorias
+    .SwipedTabs-tabs ion-segment-button{
+    	border:none !important;
+        color: #aaaaaa !important;
+        background-color: #343a40 !important;
+        -webkit-box-shadow: 3px 3px 1px #343a40;
+    }
+    // Removendo bordas do ultimo objeto
+    .SwipedTabs-tabs ion-segment-button:last-child{
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+    // Removendo bordas do primeiro objeto
+    .SwipedTabs-tabs ion-segment-button:first-child{
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+    // Cor do icone QUANDO SELECIONADO
+    .SwipedTabs-tabs ion-segment-button.SwipedTabs-activeTab
+    {
+        color: #ffffff !important;
+    }
+    // Controle da borda embaixo das categorias
+    .SwipedTabs-tabs{
+       -webkit-box-shadow: 0px 7px 3px #d6d6d6 !important;
+    }
+
+
+
+
+
+    //Seguindo problemas
+
+    // Deixa todos os items arredondados
+    .listaCategorias{
+        border-radius: 12px;
+        -webkit-box-shadow: 1px 1px 5px #b6b6b6;
+        margin-bottom: 8px;
+    }
+    .titleDeixarPreto{
+        color: aqua !important;
+    }
+
+    element.style {
+        margin-bottom: 3px;
+        margin-right: 0px;
+        margin-top: 3px;
+    }
+    .vamostentar{
+        font-size: 10px;
+    }
+    .tituloCategoria{
+        font-weight: bold;
+    }
+    // Lista por completo
+    .lista{
+        padding-bottom: 0% !important;
+        padding-top: 0% !important;
+        margin-top: 0% !important;
+        margin-bottom: 0% !important;
+        top: -50px !important;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

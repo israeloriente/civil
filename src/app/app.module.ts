@@ -20,7 +20,7 @@ import { GerenciarapartamentosPage } from '../pages/gerenciarapartamentos/gerenc
 import { AddconstrutoraPage } from '../pages/addconstrutora/addconstrutora';
 import { CadastrarcategoriaproblemaPage } from '../pages/cadastrarcategoriaproblema/cadastrarcategoriaproblema';
 import { CadastrarchamadoPage } from '../pages/cadastrarchamado/cadastrarchamado';
-import { UploadPage } from '../pages/upload/upload';
+import { TestePage } from '../pages/teste/teste';
 
 
 var firebaseConfig = {
@@ -48,7 +48,7 @@ var firebaseConfig = {
     AddconstrutoraPage,
     CadastrarcategoriaproblemaPage,
     CadastrarchamadoPage,
-    UploadPage
+    TestePage
   ],
   imports: [
     BrowserModule,
@@ -70,7 +70,7 @@ var firebaseConfig = {
     AddconstrutoraPage,
     CadastrarcategoriaproblemaPage,
     CadastrarchamadoPage,
-    UploadPage
+    TestePage
   ],
   providers: [
     StatusBar,

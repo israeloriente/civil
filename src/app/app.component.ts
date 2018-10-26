@@ -24,7 +24,7 @@ import { TestePage } from '../pages/teste/teste';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = TestePage;
+  rootPage: any = EmpreendimentosPage;
 
   pages: Array <{
     title: string,

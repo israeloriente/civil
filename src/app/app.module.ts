@@ -20,7 +20,8 @@ import { GerenciarapartamentosPage } from '../pages/gerenciarapartamentos/gerenc
 import { AddconstrutoraPage } from '../pages/addconstrutora/addconstrutora';
 import { CadastrarcategoriaproblemaPage } from '../pages/cadastrarcategoriaproblema/cadastrarcategoriaproblema';
 import { CadastrarchamadoPage } from '../pages/cadastrarchamado/cadastrarchamado';
-import { TestePage } from '../pages/teste/teste';
+import { ProvidersChamadoProvider } from '../providers/providers-chamado/providers-chamado';
+
 
 
 var firebaseConfig = {
@@ -31,7 +32,6 @@ var firebaseConfig = {
   storageBucket: "civil-5b135.appspot.com",
   messagingSenderId: "1031719893722"
 };
-
 
 
 @NgModule({
@@ -47,8 +47,7 @@ var firebaseConfig = {
     GerenciarapartamentosPage,
     AddconstrutoraPage,
     CadastrarcategoriaproblemaPage,
-    CadastrarchamadoPage,
-    TestePage
+    CadastrarchamadoPage
   ],
   imports: [
     BrowserModule,
@@ -69,13 +68,13 @@ var firebaseConfig = {
     GerenciarapartamentosPage,
     AddconstrutoraPage,
     CadastrarcategoriaproblemaPage,
-    CadastrarchamadoPage,
-    TestePage
+    CadastrarchamadoPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ProvidersChamadoProvider
   ]
 })
 export class AppModule {}

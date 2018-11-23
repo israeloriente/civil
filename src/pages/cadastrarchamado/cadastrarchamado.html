@@ -18,9 +18,10 @@
 <ion-content padding>
   
      <ion-list>
-          <ion-item>
           <ion-label>Status do chamado</ion-label>
-            <ion-select [(ngModel)]="gender">
+          <ion-item>
+          <ion-label>Selecione</ion-label>
+            <ion-select [(ngModel)]="chamado.status">
               <ion-option value="aberto">aberto</ion-option>
               <ion-option value="andamento">andamento</ion-option>
               <ion-option value="fechado">fechado</ion-option>
@@ -29,75 +30,75 @@
   
           <ion-label>Nome</ion-label>
           <ion-item>
-            <ion-input type="text"></ion-input>
+            <ion-input [(ngModel)]="chamado.nome" type="text"></ion-input>
           </ion-item>          
 
           <ion-label>Cpf</ion-label>
           <ion-item>
-            <ion-input type="number"></ion-input>
+            <ion-input [(ngModel)]="chamado.cpf" type="number"></ion-input>
           </ion-item>   
 
           <ion-label>E-mail</ion-label>
           <ion-item>
-            <ion-input type="email"></ion-input>
+            <ion-input [(ngModel)]="chamado.email" type="email"></ion-input>
           </ion-item>  
           
           <ion-label>Telefone Fixo</ion-label>
           <ion-item>
-            <ion-input type="number"></ion-input>
+            <ion-input [(ngModel)]="chamado.telefoneFixo" type="number"></ion-input>
           </ion-item> 
 
           <ion-label>Telefone Celular</ion-label>
           <ion-item>
-            <ion-input type="number"></ion-input>
+            <ion-input [(ngModel)]="chamado.telefoneCelular" type="number"></ion-input>
           </ion-item> 
     </ion-list>
           <ion-item>
               <ion-label>Empreendimento</ion-label>
-              <ion-select [(ngModel)]="notifications" interface="action-sheet">
+              <ion-select [(ngModel)]="chamado.empreendimento" interface="action-sheet">
                 <ion-option value="Alliance">Alliance</ion-option>
-                <ion-option value="">Alamoana</ion-option>
-                <ion-option value="">Fibra</ion-option>
-                <ion-option value="">Live</ion-option>
-                <ion-option value="">JW Construtora</ion-option>
+                <ion-option value="Alamoana">Alamoana</ion-option>
+                <ion-option value="fibra">Fibra</ion-option>
+                <ion-option value="live">Live</ion-option>
+                <ion-option value="jw Construtora">JW Construtora</ion-option>
               </ion-select>
           </ion-item>
           <br>
           <ion-item>
               <ion-label>Bloco</ion-label>
-              <ion-select [(ngModel)]="notifications" interface="action-sheet">
-                <ion-option value="">Bloco 1 | Alamoana</ion-option>
-                <ion-option value="">Bloco 3 | Alliance</ion-option>
+              <ion-select [(ngModel)]="chamado.bloco" interface="action-sheet">
+                <ion-option value="bloco 1 | Alamoana">Bloco 1 | Alamoana</ion-option>
+                <ion-option value="bloco 2 | Alliance">Bloco 3 | Alliance</ion-option>
               </ion-select>
           </ion-item>
           <br>
           <ion-item>
               <ion-label>Apartamento</ion-label>
-              <ion-select [(ngModel)]="notifications" interface="action-sheet">
-                <ion-option value="">Apt 104</ion-option>
-                <ion-option value="">Apt 102</ion-option>
-                <ion-option value="">Apt 204</ion-option>              
+              <ion-select [(ngModel)]="chamado.apartamento" interface="action-sheet">
+                <ion-option value="apt 104">Apt 104</ion-option>
+                <ion-option value="apt 102">Apt 102</ion-option>
+                <ion-option value="apt 204">Apt 204</ion-option>              
               </ion-select>
           </ion-item>
           <br>
           <ion-item>
               <ion-label>Envolve outro apartamento</ion-label>
-              <ion-toggle value="foo" checked="false"></ion-toggle>
+              <ion-toggle [(ngModel)]="chamado.envolveOutroApartamento" value="foo" checked="false"></ion-toggle>
           </ion-item>
           <br>
           <ion-item>
             <ion-label>Problema</ion-label>
-            <ion-select [(ngModel)]="notifications" interface="action-sheet">
-                <ion-option value="">Desabamento</ion-option>
-                <ion-option value="">Infiltração</ion-option>
+            <ion-select [(ngModel)]="chamado.problema" interface="action-sheet">
+                <ion-option value="desabamento">Desabamento</ion-option>
+                <ion-option value="infiltracao">Infiltração</ion-option>
             </ion-select>
            </ion-item>
             <br>
            <ion-grid>
              <ion-row>
                <ion-col col-4>
-                  <input type="file" id="upload_file" name="upload_file" />
-                  <label id="upload_btn" for="upload_file"><img src="../../assets/imgs/upload.png"/></label>
+                  <input type="file" (change)="definirImagens($event.target)" />
+                  <label ><ion-img  src="image1"></ion-img></label>
                </ion-col>
 
                <ion-col col-4>
@@ -113,14 +114,15 @@
             </ion-grid>
            <ion-label>Descreva o problema</ion-label>
            <ion-item class="">
-             <ion-input maxlength="500" type="text"></ion-input>
+             <ion-input [(ngModel)]="chamado.descricaoProblema" maxlength="500" type="text"></ion-input>
            </ion-item> 
            
 
 
 <!-- Botão de adicionar um novo chamado -->
+
 <ion-fab  right bottom>
-  <button (click)="navVoltarChamados()" ion-fab><ion-icon ios="ios-checkmark" md="md-checkmark"></ion-icon></button>
+  <button (click)="cadastrarChamado()" ion-fab><ion-icon name="add"></ion-icon></button>
 </ion-fab>
 
 </ion-content>

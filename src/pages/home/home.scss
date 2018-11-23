@@ -11,8 +11,15 @@ page-home {
     }
     
     .build-logo {
-        padding-bottom: 10px;
+        padding-bottom: 0%;
         max-width: 80px;
+    }
+    .titulo{
+        text-align: center;
+        font-size: 150%;
+        padding-top: 3%;
+        padding-bottom: 10%;
+        margin: 0%;
     }
 
     .item-ios {
@@ -26,11 +33,12 @@ page-home {
         border-top: none;
     }
 
-    .labels-box {
+    .btn_login{
+        height: 50px;
     }
     
     .copyright {
-        padding-top: 30px; 
+        padding-top: 30px;         
         color: lightslategrey;
     }    
 }

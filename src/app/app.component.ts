@@ -14,7 +14,6 @@ import { CadastrarchamadoPage } from '../pages/cadastrarchamado/cadastrarchamado
 import { HomePage } from '../pages/home/home';
 import { AddconstrutoraPage } from '../pages/addconstrutora/addconstrutora';
 import { CadastrarcategoriaproblemaPage } from '../pages/cadastrarcategoriaproblema/cadastrarcategoriaproblema';
-import { TestePage } from '../pages/teste/teste';
 
 
 
@@ -24,7 +23,7 @@ import { TestePage } from '../pages/teste/teste';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = EmpreendimentosPage;
+  rootPage: any = HomePage;
 
   pages: Array <{
     title: string,

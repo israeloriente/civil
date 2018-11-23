@@ -8,6 +8,10 @@ import { CadastrarchamadoPage } from '../cadastrarchamado/cadastrarchamado';
 })
 export class ChamadosPage {
 
+  public chamado = {
+    
+  };
+
   constructor(public navCtrl: NavController,
               public navParams: NavParams) {
   }
